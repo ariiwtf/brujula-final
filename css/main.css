@@ -737,7 +737,7 @@ a {
   background-color: #fff;
   border-radius: 0px 260px 0px 260px;
   height: 800px;
-  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.25); }
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.25); }
   .section2 .texto__section2 {
     padding: 3rem 34rem 1rem; }
     .section2 .texto__section2 h2 {
