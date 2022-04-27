@@ -1,0 +1,60 @@
+// LOGO + FRASE
+.background0 {
+    background-color: #FFFFFF;
+    border-radius: 0% 0% 100% 100%;
+    box-shadow: 0px 10px 8px 5px rgba(0, 0, 0, 0.25);
+}
+
+.section0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.logo__section0 img {
+    width: 92%;
+}
+
+.texto__section0 {
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    align-self: center;
+
+    .comillas {
+        padding-left: 1rem;
+    }
+}
+
+.button__section0 {
+    @include button-azul;
+
+    a {
+        padding: 0.4rem 5rem;
+        margin: 0 1rem;
+        box-sizing: border-box;
+        background-color: $color-principal;
+        border-radius: 10px;
+        border: none;
+        width: 25%;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: all .3s;
+
+        &:hover {
+            background: #FFFFFF;
+            color: $color-principal;
+        }
+    }
+
+   .material-icons {
+        font-size: 36px;
+        padding: 1rem;
+        vertical-align: sub;
+   } 
+}
