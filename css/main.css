@@ -879,7 +879,7 @@ a {
         transition: all 0.2s ease-out; }
         .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4:hover {
           background-color: #0CA1E3;
-          transform: scale(1.02); }
+          transform: scale(1.1); }
           .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4:hover h3 {
             color: #FFFFFF;
             font-size: 32px; }
