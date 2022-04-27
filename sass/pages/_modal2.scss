@@ -86,10 +86,19 @@
     align-items: center;
 }
 
-.nombre_linkedin_1{
-    color: red;
-    text-decoration: none;
+a{  text-decoration: none;
+    font-weight: bolder;
+    
+    .nombre_linkedin_1{
+        margin-top: -38px;
+        margin-left: 50px;
+        color: $color-principal;
+        
+    }
 }
+
+
+
 
 .card-presentacion1 {
     background-color: #FFFFFF;
