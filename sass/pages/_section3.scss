@@ -1,6 +1,6 @@
 // PROBLEMÁTICAS QUE ABORDAMOS
 .section____3{
-    height: 820px;
+    height: 816px;
     background-color: #FFFFFF;
     // border-radius: 0% 0% 100% 100%;
 }
@@ -13,9 +13,8 @@
 }
 
 .section3 {
-
     .titulo__section3 h2 {
-        margin-top: -400px;
+        margin-top: -425px;
         @include titulos-principales;
         padding: 3rem;
         color: #FFFFFF;
@@ -41,13 +40,14 @@
             display: flex;   
             justify-content: center;   
             align-items: center;
-            background: rgba(185, 208, 229, 0.706);
+            background: rgba(185, 205, 223, 0.658);
             cursor: pointer;
             z-index: 9;            
             border-radius: 50%;
 
             .material-icons {
                 font-size: 32px;
+                font-weight: bolder;
                 height: 2rem;
                 color: $color-principal;  
             }
@@ -81,7 +81,6 @@
                     font-size: 20px;
                     line-height: 35px;
                     color: $color-principal;
-                    
                 }
             }
         }     
@@ -90,4 +89,27 @@
 
 #brujula1{
     margin-left: -150px;
+}
+
+@media screen and (max-width: 600px) {
+    .section3 {
+        .titulo__section3 h2 {
+            font-size: 42px;
+        }
+
+        .carousel__section3 {
+            .carousel-track {
+                .each__card3 {
+                    width: 20rem;
+                    height: 19rem;
+            
+                    img {
+                        width: 16rem;
+                        height: 85%;
+                    }
+                }
+            }            
+        }
+
+    }
 }

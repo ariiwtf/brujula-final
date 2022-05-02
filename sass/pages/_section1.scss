@@ -1,6 +1,7 @@
 // MINI INTRO
 .first {
     overflow: hidden;
+    padding: 2rem;
 
     .photo1{
         margin-left: -200px;
@@ -8,19 +9,17 @@
 
     .photo2 {
         position: absolute;
-        margin-left: 1100px;
-        margin-top: -200px;
+        right: 0;
+        top: 50%;
     } 
 }
 
 .section1 {
-    margin-left: 300px;
-    margin-right: 300px;
     text-align: center;
     background-color: $color-principal;
     color: #FFFFFF;
-    margin-top: -340px;
-    margin-bottom: 4rem;
+    width: 73%;
+    margin: 0 auto;
 
     h1 {
         margin-top: -445px; 
@@ -33,4 +32,21 @@
         text-align: justify;
         padding: 4rem;
     } 
+}
+
+@media screen and (max-width: 1350px) {
+    .first {
+        .photo2 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section1 {
+        p {
+            font-size: 20px;
+            padding: 1rem;
+        }
+    }
 }

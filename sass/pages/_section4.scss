@@ -13,12 +13,10 @@
 
     .terapias__section4 {
         padding: 1rem 1rem 2rem 1rem;
-        display: flex;
-        flex-direction: column;
 
         .track-tarjetas__section4 {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
             justify-content: space-around;
             padding-bottom: 0.5rem;
 
@@ -27,12 +25,11 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 padding: 1rem;
-                margin: 10px;
+                margin: 5px;
                 border-radius: 10px;
                 box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
                 width: 30%;
                 overflow: hidden;
-                border: 1px solid #FFFFFF;
                 transition: all 0.2s ease-out;
 
                 &:hover {
@@ -74,11 +71,15 @@
 
     .target__section4 {
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
         justify-content: space-evenly;
         text-align: center;
         padding: 3rem 0 2rem 0;
+
+        .card__section4 {
+            img {
+                width: 90%;
+            }
+        }
 
         h2 {
             font-weight: 500;
@@ -132,4 +133,76 @@
     border-radius: 0% 0% 100% 100%;
     background-color: $color-principal;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .section4 {
+        padding: 3rem;
+
+        .terapias__section4 {
+            .track-tarjetas__section4 {
+                display: block;
+                padding-bottom: 0;
+
+                .texto-tarjeta__section4 {
+                    width: 100%;
+                    flex-direction: column;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section4 { 
+        h2 {
+            font-size: 40px;
+        }
+
+        .target__section4 {
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+            .card__section4 img {
+                width: 50%;
+            }
+    
+            h2 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 56px;
+                color: black;
+            }
+        }
+
+        .moreinfo__section4 {
+    
+            a {
+                padding: 0.2rem 1rem;
+                width: 25%;
+                font-weight: 400;
+                font-size: 20px;
+            }
+    
+            .material-icons {
+                font-size: 24px;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .solo_fondo_blanco_seccion4{
+        background-color: #FFFFFF;
+        height: 520px;
+    }
+
+    .solo_fondo_seccion4{
+        margin-top: none;
+        height: none;
+        border-radius: 0% 0% 100% 100%;
+        background-color: $color-principal;
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+    }
 }

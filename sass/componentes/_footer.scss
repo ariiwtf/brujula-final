@@ -1,13 +1,13 @@
 #footer_principal{
     background-color: #FFFFFF;
+    padding-bottom: 1rem;
  }
  
- 
- .footer__index {
-     padding-top: 4rem;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
+    .footer__index {
+        padding-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
  }
  
  .logo__footer {
@@ -78,7 +78,7 @@
      position:absolute;
      top:0px;
      box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-     font-size: 15px;
+     font-size: 14px;
      padding: 10px 18px;
      border-radius: 25px;
      color: $color-principal;
@@ -147,7 +147,7 @@
      }    
  }
  
- @media screen and (max-width: 780px) {
+ @media screen and (max-width: 855px) {
      .footer__index {
          display: flex;
          flex-direction: column;
